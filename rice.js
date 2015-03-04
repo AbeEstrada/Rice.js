@@ -48,9 +48,12 @@ function randomFloat(min, max) {
 
 function shuffleArray(array) {
   var shuffled = [];
-  while(array.length) {
-    shuffled.push(array.splice(Math.random() * array.length, 1));
-  }
+  for (var i = array.length - 1; i >= 0; i--) {
+    var j = Math.floor(Math.random() * array.length);
+    shuffled.push(array[j]);
+    array.splice(j, 1);
+  };
+  return shuffled.reverse();
 }
 
 function isUndefined(value){
