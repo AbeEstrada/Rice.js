@@ -94,11 +94,6 @@ function isWindow(obj) {
 }
 
 
-function isScope(obj) {
-  return obj && obj.$evalAsync && obj.$watch;
-}
-
-
 function isFile(obj) {
   return toString.apply(obj) === '[object File]';
 }
