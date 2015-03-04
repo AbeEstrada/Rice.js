@@ -13,7 +13,7 @@ function ajaxGET(dir, async, funct){
   } else {
     xmlhttp = new ActiveXObject("Microsoft.XMLHttp");
   }
-  xmlhttp.onreadystatechange = function;
+  xmlhttp.onreadystatechange = funct;
   xmlhttp.open("GET", dir, async);
 }
 
