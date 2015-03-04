@@ -6,7 +6,7 @@ function style(x){
   return e(x).style;
 }
 
-function ajaxGET(dir, async, function){
+function ajaxGET(dir, async, funct){
   var xmlhttp
   if (window.XMLHttpRequest) {
     xmlhttp = new XMLHttpRequest();
